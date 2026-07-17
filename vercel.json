@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/v1beta/:path*",
-      "destination": "/api/proxy?path=v1beta/:path*"
+      "source": "/(.*)",
+      "destination": "/api/proxy?path=$1"
     }
   ]
 }
